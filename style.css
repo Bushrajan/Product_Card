@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+@font-face {
+  font-family: top_heading;
+  src: url(./assets/Raleway-Bold.ttf);
+}
+
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(0, 0, 0) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.918) 0px 0px 0px 1px;
+}
+
+.parent {
+  background: white;
+  height: 90vh;
+  width: 45%;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.child1 {
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  left: -10%;
+  top: 10%;
+  border-radius: 11px;
+}
+
+.new {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  align-items: center;
+  background-color: rgb(254, 154, 2);
+  border-radius: 11px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.icons1 {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.options {
+  width: 100%;
+  height: 65%;
+  position: relative;
+}
+
+.options img {
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  left: -15%;
+  filter: drop-shadow(16px 16px 20px #272727);
+  height: 95%;
+}
+
+.gap {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0px 0px 11px 11px;
+  background: white;
+
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  border: 1px solid rgba(255, 145, 0, 0.437);
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+.child2 {
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  border-radius: 0px 11px 11px 0px;
+}
+
+.new0 {
+  height: 100%;
+  padding: 10px;
+  width: 100%;
+}
+
+.p {
+  color: rgba(24, 23, 23, 0.747);
+  font-size: 12px;
+  font-family: cod-font;
+  font-weight: bold;
+  word-spacing: 0.09em;
+}
+
+.pesa .money {
+  font-size: 30px;
+}
+
+.float {
+  font-size: 80px;
+  color: var(--primary-color);
+}
+
+.options2 {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.bxx1,
+.bxx2,
+.bxx3,
+.bxx4 {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  border: 1px solid rgba(255, 145, 0, 0.437);
+  background-color: white;
+}
+
+.bxx img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-head {
+  font-family: url(./assets/Raleway-Regular.ttf);
+}
+
+.li {
+  margin-top: 8px;
+  font-family: url(./assets/Raleway-Regular.ttf);
+}
+
+.button {
+  width: 40%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #f5f5f5;
+}
+
+@media only screen and (min-width: 1350px) {
+  .child2 {
+    right: 20px;
+  }
+
+  .child1 {
+    left: -15%;
+  }
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 1000px) {
+  .parent {
+    width: 60%;
+  }
+
+  .child2 {
+    height: 100%;
+    top: 10;
+    width: 50%;
+    padding-left: 2%;
+  }
+
+  .child1 {
+    height: 80%;
+    top: 10;
+    width: 50%;
+    left: -30px;
+    /* border-radius: 10px; */
+  }
+
+  .options img {
+    width: 100%;
+    left: -18%;
+  }
+
+  .gap {
+    border-radius: 0px 0px 0px 11px;
+  }
+
+  .new {
+    border-radius: 11px 0px 0px 11px;
+  }
+
+  .float {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1000px) {
+  .main {
+    box-shadow: none;
+  }
+
+  .parent {
+    display: grid;
+  }
+
+  .child2 {
+    height: 95%;
+    top: 110%;
+    width: 100%;
+  }
+
+  .child1 {
+    height: 100%;
+    top: 0;
+
+    width: 100%;
+    left: 0;
+  }
+
+  .options img {
+    width: 90%;
+    left: 2%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .main {
+    box-shadow: none;
+  }
+
+  .parent {
+    width: 50%;
+    display: grid;
+  }
+
+  .child2 {
+    height: 95%;
+    top: 110%;
+    width: 100%;
+  }
+
+  .child1 {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+
+  .options img {
+    width: 85%;
+    height: 90%;
+    left: 8%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    box-shadow: none;
+  }
+
+  .parent {
+    width: 80%;
+    height: 70%;
+    display: grid;
+  }
+
+  .child2 {
+    height: 95%;
+    top: 110%;
+    width: 100%;
+  }
+
+  .child1 {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+
+  .options img {
+    width: 85%;
+    height: 90%;
+    left: 8%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .main {
+    box-shadow: none;
+  }
+
+  .parent {
+    width: 80%;
+    height: 70%;
+    display: grid;
+  }
+
+  .child2 {
+    height: 95%;
+    top: 110%;
+    width: 90%;
+    font-size: 15px;   
+  }
+
+  .child1 {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+
+  .options img {
+    width: 85%;
+    height: 90%;
+    left: 8%;
+  }
+  .bxx {
+width: 50px;
+height: 40px;
+margin: 10px;
+
+  }
+}
+
+.p:hover {
+  font-size: large;
+  color: orange;
+}
+
+button:hover {
+  font-size: large;
+  width: 300px;
+}
+
+li:hover {
+  color: orange;
+}
+
+.bxx:hover {
+  zoom: 0.9;
+}
+
+.box1:hover {
+  zoom: 0.9;
+}
+
+.box2:hover {
+  zoom: 0.9;
+}
+
+.box3:hover {
+  zoom: 0.9;
+}
+
+.box4:hover {
+  zoom: 0.9;
+}
+
+.icons1:hover {
+  font-size: 30px;
+}
+
+.options img:hover {
+  width: 110%;
+}
